@@ -1,3 +1,15 @@
+<header>
+  <div class="hardware_button">
+    <%= button_to "ALL", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "ALL"}} %>
+    <%= button_to "FC", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "FC"}} %>
+    <%= button_to "SFC", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "SFC"}} %>
+    <%= button_to "N64", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "N64"}} %>
+    <%= button_to "GBA", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "GBA"}} %>
+    <%= button_to "DS", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "DS"}} %>
+    <%= button_to "PCE", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "PCE"}} %>
+    <%= button_to "MSX", {controller: "games_list", action: "index"}, {method: :get, params: {hardware: "MSX"}} %>
+  </div>
+</header>
 <div>
   <% @games.each do |game| %>
     <div class="game_list">
